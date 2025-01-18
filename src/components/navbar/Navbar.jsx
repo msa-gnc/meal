@@ -7,16 +7,16 @@ const [open,setOpen] = useState(false)
 
   return (
   
-    <Nav>
-      <Logo to="/home">
+    <Nav >
+      <Logo to="/home" onClick={()=>setOpen(!open)}>
         <i>{"<Clarusway/>"}</i>
         <span>recipe</span>
-      </Logo>
+      </Logo >
       <Hamburger onClick={()=>setOpen(!open)}>
         <GiHamburgerMenu/>  
       </Hamburger>
 
-      <Menu>
+      <Menu openn={open} onClick={()=>setOpen(!open)}>
         <MenuLink to="/about">About</MenuLink> 
         <a to="https://github.com/">Github</a>
         <MenuLink to="/">Logout</MenuLink>

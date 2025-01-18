@@ -53,13 +53,14 @@ export const Menu = styled.div`
   /* içinde bulunduğu div in  stillerine göre ayarla kendini,akıştan çık,  bunu yazmazsak food app in altında kalacak */
   /* 3 kelime  açılınca üstteki özelliklerde olsun*/
   @media (max-width: 768px) {
+
      
     /* uzun yazı olurda taşarsa gizle (hamburgere dönüşünce)*/
     flex-direction: column;
     /* display:none; */
     width: 100%;
-  /* hamburgere tıklanınca true olan "" sayesinde görün, false olunca görünme */
-    /* display: */
+  /* hamburgere tıklanınca true olan "openn" sayesinde görünür ol, false olunca görünme */
+    display:${({openn})=>(openn ? "flex" :"none")}
   }
 /* export const Mlink=styled.a */
   a {
