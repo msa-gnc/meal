@@ -56,7 +56,7 @@ export const Menu = styled.div`
      
     /* uzun yazı olurda taşarsa gizle (hamburgere dönüşünce)*/
     flex-direction: column;
-
+    /* display:none; */
     width: 100%;
   /* hamburgere tıklanınca true olan "" sayesinde görün, false olunca görünme */
     /* display: */
