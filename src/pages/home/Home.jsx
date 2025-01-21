@@ -4,11 +4,10 @@ import { RecipeContext } from '../../context/RecipeProvider'
 import asci from "../../assets/home.svg"
 import { HomeImg, ImgDiv } from './HomeStyles'
 import RecipeCard from './RecipeCard'
-
-
 const Home = () => {
 
 const{yemekler}=useContext(RecipeContext)
+
 
   return (
     <div>
